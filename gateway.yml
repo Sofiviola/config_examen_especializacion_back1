@@ -26,3 +26,7 @@ spring:
           uri: lb://catalog-service
           predicates:
             - Path=/catalog/**
+         - id: serie-service
+          uri: lb://serie-service
+          predicates:
+            - Path=/serie/**
